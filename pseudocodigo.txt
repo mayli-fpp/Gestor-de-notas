@@ -1,0 +1,30 @@
+INICIO
+REPETIR
+IMPRIMIR "Gestor de notas"
+IMPRIMIR "1. Registrar un nuevo curso y nota"
+IMPRIMIR "2. Mostrar todas las notas"
+IMPRIMIR "3. SALIR"
+IMPRIMIR "SELECCIONE OPCION"
+
+LEER opcion
+
+SI opcion = 1 ENTONCES
+<registrar_nuevoCurso>
+SINO
+SI opcion = 2 ENTONCES
+<mostrar_todaslasnotas>
+SINO
+SI opcion = 3 ENTONCES
+<calcular_promedioGeneral>
+SINO
+SI opcion = 4 ENTONCES
+IMPRIMIR "Saliendo del sistema"
+SINO
+IMPRIMIR "Opcion no valida"
+FINSI
+FINSI
+FINSI
+FINSI
+
+MIENTRAS opcion != 4
+FIN
