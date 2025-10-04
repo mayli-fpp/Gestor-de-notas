@@ -119,19 +119,19 @@ def agregar_revision():
         print("Error: el curso no puede estar vacio")
         return
     revision.append(curso)
-    print(f"El curso {curso} agregado a la lista de revisión.")
+    print(f"El curso {curso} agregado a la cola de revisión.")
 
 def procesar_revision():
     if len(revision) == 0:
-        print("No hay cursos en la lista de revisión.")
+        print("No hay cursos en la cola de revisión.")
     else:
         curso = revision.pop(0)
-        print(f"Procesando revisión del curso: {curso}")
+        print(f"Revision de curso: {curso}")
        
 ## funciones de ordenamiento
 def ordenar_burbuja():
     if len(notas) == 0:
-        print("No hay notas registradas para ordenar.")
+        print("No hay notas registradas.")
         return
 
     lista = notas.copy()
@@ -141,7 +141,7 @@ def ordenar_burbuja():
             if lista[j]['nota'] > lista[j+1]['nota']:
                 lista[j], lista[j+1] = lista[j+1], lista[j]
 
-    print("cursos ordenados por nota (burbuja):")
+    print("cursos ordenados por nota (menor a mayor) con burbuja:")
     for registro in lista:
         print(f"- {registro['curso']}: {registro['nota']}")
 
@@ -159,7 +159,7 @@ def ordenar_insercion():
             j -= 1
         lista[j + 1] = key
 
-    print("cursos ordenados por nota (insercion):")
+    print("cursos ordenados por nota (mayor a menor) con insercion:")
     for registro in lista:
         print(f"- {registro['curso']}: {registro['nota']}")                        
 
@@ -209,4 +209,5 @@ def menu():
         break
     else:
         print("Opción inválida. Por favor, seleccione una opción del 1 al 12.")
+
 menu()
