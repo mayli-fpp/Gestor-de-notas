@@ -64,12 +64,12 @@ Python, incluyendo el uso de bucles, condicionales, funciones y estructuras de d
 la modularización para mantener el código ordenado y fácil de mantener. Además, reforcé mis conocimientos sobre los algoritmos de ordenamiento y su impacto en
 la eficiencia de un programa.
 
-## ¿Qué fue lo más desafiante de resolver?
+### ¿Qué fue lo más desafiante de resolver?
 Lo más desafiante fue lograr que todas las partes del sistema trabajaran de forma coherente, especialmente la integración entre las funciones de registro,
 actualización y eliminación de datos junto con la pila de historial y la cola de revisión. Otro reto importante fue implementar los algoritmos de ordenamiento
 sin recurrir a funciones integradas, lo que exigió comprender su funcionamiento interno paso a paso.
 
-## ¿Qué mejoraría si tuviera más tiempo?
+### ¿Qué mejoraría si tuviera más tiempo?
 Si contara con más tiempo, mejoraría el sistema añadiendo almacenamiento persistente (por ejemplo, guardando los datos en un archivo o base de datos) y una
 interfaz gráfica simple para hacerlo más intuitivo. También implementaría pruebas automatizadas para garantizar la confiabilidad del programa y documentaría
 cada módulo con mayor profundidad, siguiendo estándares profesionales de desarrollo de software.
