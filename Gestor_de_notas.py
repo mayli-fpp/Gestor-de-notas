@@ -56,6 +56,14 @@ def calcular_promedio():
         print(f"El promedio de las notas es: {ptomedio:.2f}")
         add_historial("Calculó promedio de notas")
 
+##funcion contar cursos aprobados y reprobados
+def contar_aprobados_reprobados():
+    aprobados = sum(1 for reg in notas if reg['nota'] >= 60)
+    reprobados = sum(1 for reg in notas if reg['nota'] < 60)
+    add_historial(f"Contó cursos: {aprobados} aprobados, {reprobados} reprobados")
+    print(f"Cursos aprobados: {aprobados}")
+    return aprobados, reprobados
+
 ## Funcion para buscar un curso por su nombre
 
 def buscar_curso():
@@ -207,15 +215,16 @@ def menu():
         print("1. Registrar curso y nota")
         print("2. Mostrar notas registradas")
         print("3. Calcular promedio de notas")
-        print("4. buscar curso")
-        print("5. Actualizar nota de un curso")
-        print("6. Eliminar curso")
-        print("7. Ver historial")
-        print("8. Agregar curso a revisión")
-        print("9. Procesar revisión de curso")
-        print("10. Ordenar notas (burbuja)")
-        print("11. Ordenar notas (inserción)")
-        print("12. Salir")
+        print("4. cursos Aprobados y Reprobados")
+        print("5. buscar curso")
+        print("6. Actualizar nota de un curso")
+        print("7. Eliminar curso")
+        print("8. Ver historial")
+        print("9. Agregar curso a revisión")
+        print("10. Procesar revisión de curso")
+        print("11. Ordenar notas (burbuja)")
+        print("12. Ordenar notas (inserción)")
+        print("13. Salir")
         
         opcion = input("Seleccione una opción (1-12): ")
         
@@ -226,27 +235,28 @@ def menu():
         elif opcion == "3":
             calcular_promedio()
         elif opcion == "4":
-            buscar_curso()
+            contar_aprobados_reprobados()
         elif opcion == "5":
-            actualizar_nota()
+            buscar_curso()
         elif opcion == "6":
-            eliminar_curso() 
+            actualizar_nota()
         elif opcion == "7":
-            ver_historial() 
+            eliminar_curso() 
         elif opcion == "8":
-            agregar_revision()
+            ver_historial() 
         elif opcion == "9":
-            procesar_revision()
+            agregar_revision()
         elif opcion == "10":
-            ordenar_burbuja()
+            procesar_revision()
         elif opcion == "11":
-            ordenar_insercion()
+            ordenar_burbuja()
         elif opcion == "12":
-            print("Salienddo del programa, gracias por usar nuestro sistema.....")
+            ordenar_insercion()
+        elif opcion == "13":
+            print("Saliendo del programa, graciaspor usar nuestro sitema....")
             break
         else:
-            print("Opción inválida. Por favor, seleccione una opción del 1 al 12.")
+            print("Opción inválida. Por favor, seleccione una opción del 1 al 13.")
 
 if __name__ == "__main__":
-
     menu()
