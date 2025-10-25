@@ -1,44 +1,41 @@
 INICIO
-
-    REPETIR
-
-        IMPRIMIR "***GESTOR DE NOTAS ACADÉMICAS***"
-        IMPRIMIR "1. Registrar un nuevo curso y nota"
-        IMPRIMIR "2. Mostrar todas las notas"
-        IMPRIMIR "3. Calcular promedio general"
-        IMPRIMIR "4. Editar una nota existente"
-        IMPRIMIR "5. Eliminar un curso"
-        IMPRIMIR "6. Salir"
-        IMPRIMIR "Seleccione una opción: "
-
-        LEER opcion
-
-        SI opcion = 1 ENTONCES
-            <registrar_nuevo_curso_y_nota>
-        SINO
-            SI opcion = 2 ENTONCES
-                <mostrar_todas_las_notas>
-            SINO
-                SI opcion = 3 ENTONCES
-                    <calcular_promedio_general>
-                SINO
-                    SI opcion = 4 ENTONCES
-                        <editar_nota_existente>
-                    SINO
-                        SI opcion = 5 ENTONCES
-                            <eliminar_curso>
-                        SINO
-                            SI opcion = 6 ENTONCES
-                                IMPRIMIR "Saliendo del sistema..."
-                            SINO
-                                IMPRIMIR "Opción no válida, intente de nuevo."
-                            FIN_SI
-                        FIN_SI
-                    FIN_SI
-                FIN_SI
-            FIN_SI
+    MIENTRAS (true)
+        IMPRIMIR "Menú principal"
+        IMPRIMIR "1. Registrar curso y nota"
+        IMPRIMIR "2. Mostrar notas"
+        IMPRIMIR "3. Calcular promedio"
+        IMPRIMIR "4. Buscar curso"
+        IMPRIMIR "5. Actualizar nota"
+        IMPRIMIR "6. Eliminar curso"
+        IMPRIMIR "7. Ver historial"
+        IMPRIMIR "8. Revisar cola"
+        IMPRIMIR "9. Ordenar notas (burbuja)"
+        IMPRIMIR "10. Ordenar notas (inserción)"
+        IMPRIMIR "12. Salir"
+        LEER opción
+        SI opción == 1 ENTONCES
+            registrar_curso_y_nota()
+        SINO SI opción == 2 ENTONCES
+            mostrar_notas()
+        SINO SI opción == 3 ENTONCES
+            calcular_promedio()
+        SINO SI opción == 4 ENTONCES
+            buscar_curso()
+        SINO SI opción == 5 ENTONCES
+            actualizar_nota()
+        SINO SI opción == 6 ENTONCES
+            eliminar_curso()
+        SINO SI opción == 7 ENTONCES
+            ver_historial()
+        SINO SI opción == 8 ENTONCES
+            revisar_cola()
+        SINO SI opción == 9 ENTONCES
+            ordenar_notas_burbuja()
+        SINO SI opción == 10 ENTONCES
+            ordenar_notas_insercion()
+        SINO SI opción == 12 ENTONCES
+            SALIR
         FIN_SI
-
-    MIENTRAS opcion != 6
-
+    FIN_MIENTRAS
 FIN
+
