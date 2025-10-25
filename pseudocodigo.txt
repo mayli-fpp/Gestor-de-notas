@@ -1,16 +1,17 @@
 INICIO
-    MIENTRAS (true)
+    MIENTRAS (VERDADERO)
         IMPRIMIR "Menú principal"
         IMPRIMIR "1. Registrar curso y nota"
         IMPRIMIR "2. Mostrar notas"
         IMPRIMIR "3. Calcular promedio"
-        IMPRIMIR "4. Buscar curso"
-        IMPRIMIR "5. Actualizar nota"
-        IMPRIMIR "6. Eliminar curso"
-        IMPRIMIR "7. Ver historial"
-        IMPRIMIR "8. Revisar cola"
-        IMPRIMIR "9. Ordenar notas (burbuja)"
-        IMPRIMIR "10. Ordenar notas (inserción)"
+        IMPRIMIR "4. Contar cursos aprobados y reprobados"
+        IMPRIMIR "5. Buscar curso"
+        IMPRIMIR "6. Actualizar nota"
+        IMPRIMIR "7. Eliminar curso"
+        IMPRIMIR "8. Ver historial"
+        IMPRIMIR "9. Revisar cola"
+        IMPRIMIR "10. Ordenar notas (burbuja)"
+        IMPRIMIR "11. Ordenar notas (inserción)"
         IMPRIMIR "12. Salir"
         LEER opción
         SI opción == 1 ENTONCES
@@ -19,23 +20,24 @@ INICIO
             mostrar_notas()
         SINO SI opción == 3 ENTONCES
             calcular_promedio()
-        SINO SI opción == 4 ENTONCES
-            buscar_curso()
+       SINO SI opción == 4 ENTONCES
+            Contar_aprobados_reprobados()
         SINO SI opción == 5 ENTONCES
-            actualizar_nota()
+            buscar_curso()
         SINO SI opción == 6 ENTONCES
-            eliminar_curso()
+            actualizar_nota()
         SINO SI opción == 7 ENTONCES
-            ver_historial()
+            eliminar_curso()
         SINO SI opción == 8 ENTONCES
-            revisar_cola()
+            ver_historial()
         SINO SI opción == 9 ENTONCES
-            ordenar_notas_burbuja()
+            revisar_cola()
         SINO SI opción == 10 ENTONCES
+            ordenar_notas_burbuja()
+        SINO SI opción == 11 ENTONCES
             ordenar_notas_insercion()
-        SINO SI opción == 12 ENTONCES
+        SINO SI opción == 13 ENTONCES
             SALIR
         FIN_SI
     FIN_MIENTRAS
 FIN
-
