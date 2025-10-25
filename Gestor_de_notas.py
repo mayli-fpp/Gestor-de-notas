@@ -242,10 +242,11 @@ def menu():
         elif opcion == "11":
             ordenar_insercion()
         elif opcion == "12":
-            print("Saliendo del programa.")
+            print("Salienddo del programa, gracias por usar nuestro sistema.....")
             break
         else:
             print("Opción inválida. Por favor, seleccione una opción del 1 al 12.")
 
 if __name__ == "__main__":
+
     menu()
