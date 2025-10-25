@@ -58,7 +58,7 @@ python gestor_notas.py
 
 ## Refleccion personal
 
-### ¿Que aprendi con este proyecto?
+### ¿Que aprendí con este proyecto?
 Durante el desarrollo del Gestor de Notas Académicas aprendí a aplicar de manera práctica los fundamentos de la programación estructurada en
 Python, incluyendo el uso de bucles, condicionales, funciones y estructuras de datos como listas, pilas y colas. También comprendí la importancia de
 la modularización para mantener el código ordenado y fácil de mantener. Además, reforcé mis conocimientos sobre los algoritmos de ordenamiento y su impacto en
