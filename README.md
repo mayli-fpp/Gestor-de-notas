@@ -54,8 +54,6 @@ El programa está dividido en funciones para facilitar su comprensión y modular
 1. Guardar el código en un archivo llamado gestor_notas.py.  
 2. Abrir una terminal en la carpeta donde se encuentra el archivo.  
 3. Ejecutar el programa con:  
-
-```bash
 python gestor_notas.py
 
 ## Refleccion personal
