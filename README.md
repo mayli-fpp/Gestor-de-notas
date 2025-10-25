@@ -16,20 +16,34 @@ El programa cuenta con un menú interactivo que permite:
    - Se listan todos los cursos registrados con sus notas.  
 
 3. *Calcular promedio*  
-   - Se obtiene el promedio de todas las notas registradas.  
+   - Se obtiene el promedio de todas las notas registradas.
 
-4. *Buscar curso (búsqueda lineal)*  
+4. *Contar cursos aprobados y reprobados*
+   - Se cuentan todos los cursos que su nota sea mayora 60 como aprobado y los que sean menor a 60 reprobados.
+
+5. *Buscar curso (búsqueda lineal)*  
    - Permite buscar un curso por su nombre y muestra la nota asociada.  
 
-5. *Actualizar nota de un curso*  
+6. *Actualizar nota de un curso*  
    - El usuario selecciona un curso y modifica la calificación.  
 
-6. *Eliminar curso*  
+7. *Eliminar curso*  
    - Se puede eliminar un curso junto con su nota de la lista.  
 
-7. *Salir del sistema*  
-   - Termina la ejecución del programa.  
-
+9. *Salir del sistema*  
+   - Termina la ejecución del programa.
+     
+10. *Ver historial*
+    - Muestra las ultimas acciones realizadas (uso de pila).
+      
+11. *Revisar cola*
+    - Procesa los cursos pendientes en orden de llegada (uso de cola).
+    
+12. *Ordenar notas burbuja, ordenar notas insercion*
+    - Aplican ordenamientos manuales a la lista principal.
+  
+13. *Salir del sistema*  
+   - Termina la ejecución del programa.
 ## Requisitos del sistema
 
 - *Lenguaje:* Python 3.x  
@@ -41,12 +55,15 @@ El programa está dividido en funciones para facilitar su comprensión y modular
 
 - registrar_curso_y_nota() → Registra un curso con su nota.  
 - mostrar_notas() → Muestra la lista completa de cursos y notas.  
-- calcular_promedio() → Calcula y muestra el promedio general.  
+- calcular_promedio() → Calcula y muestra el promedio general.
+- Contar_aprobados_reprobados()  Cuenta todos los cursos aprobados y reprobados  
 - buscar_curso() → Busca un curso por nombre (búsqueda lineal).  
 - actualizar_nota() → Permite modificar la nota de un curso existente.  
-- eliminar_curso() → Elimina un curso de la lista.  
+- eliminar_curso() → Elimina un curso de la lista.
+- Ver_historial(): muestra las ultimas acciones realizadas (uso de pila).
+- Revisar_cola(): procesa los cursos pendientes en orden de llegada (uso de cola).
+- Ordenar_notas_burbuja() / ordenar_notas_insercion(): aplicn ordenamientos manuales a la lista principal.
 - menu() → Despliega el menú principal y controla el flujo del programa.  
-
 ---
 
 ##  Ejecución
