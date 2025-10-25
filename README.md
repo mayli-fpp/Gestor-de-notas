@@ -1,4 +1,4 @@
-### Gestor de Notas Académicas
+## Gestor de Notas Académicas
 
 ## Descripción del proyecto
 El *Gestor de Notas Académicas* es un programa en *Python* que permite a los estudiantes y docentes llevar un control básico de los cursos y sus calificaciones.  
